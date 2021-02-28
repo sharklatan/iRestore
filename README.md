@@ -19,6 +19,6 @@ v1.1.0
 v1.0.0
 - Initial release
 
-# This uses s0uthwest's version of futurerestore
+# This uses opa334 version of futurerestore
 
 https://github.com/opa334/futurerestore/releases
