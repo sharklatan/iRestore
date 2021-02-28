@@ -1,0 +1,9 @@
+C:\Users\GamiX\Documents\GitHub\iRestore\Source\iRestore\obj\Debug\iRestore.FormMain.resources
+C:\Users\GamiX\Documents\GitHub\iRestore\Source\iRestore\obj\Debug\iRestore.csproj.GenerateResource.cache
+C:\Users\GamiX\Documents\GitHub\iRestore\Source\iRestore\bin\Debug\iRestore.exe.config
+C:\Users\GamiX\Documents\GitHub\iRestore\Source\iRestore\bin\Debug\iRestore.exe
+C:\Users\GamiX\Documents\GitHub\iRestore\Source\iRestore\bin\Debug\iRestore.pdb
+C:\Users\GamiX\Documents\GitHub\iRestore\Source\iRestore\obj\Debug\iRestore.Properties.Resources.resources
+C:\Users\GamiX\Documents\GitHub\iRestore\Source\iRestore\obj\Debug\iRestore.csproj.CoreCompileInputs.cache
+C:\Users\GamiX\Documents\GitHub\iRestore\Source\iRestore\obj\Debug\iRestore.exe
+C:\Users\GamiX\Documents\GitHub\iRestore\Source\iRestore\obj\Debug\iRestore.pdb
