@@ -36,8 +36,8 @@ namespace iRestore
             {
                 try
                 {
-                    version = client.DownloadString("https://raw.githubusercontent.com/qwertyuiop1379/iRestore/master/futurerestore");
-                    hashsum = client.DownloadString("https://raw.githubusercontent.com/qwertyuiop1379/iRestore/master/hashsum");
+                    version = client.DownloadString("https://raw.githubusercontent.com/sharklatan/iRestore/master/futurerestore");
+                    hashsum = client.DownloadString("https://raw.githubusercontent.com/sharklatan/iRestore/master/hashsum");
                 }
                 catch
                 {
@@ -95,7 +95,9 @@ namespace iRestore
                     {
                         ZipFile.ExtractToDirectory(Application.UserAppDataPath + "\\futurerestore.zip", Application.UserAppDataPath + "\\tmp");
                         if (File.Exists(Application.UserAppDataPath + "\\futurerestore.exe")) File.Delete(Application.UserAppDataPath + "\\futurerestore.exe");
+                        if (File.Exists(Application.UserAppDataPath + "\\irecovery.exe")) File.Delete(Application.UserAppDataPath + "\\irecovery.exe");
                         File.Move(Application.UserAppDataPath + "\\tmp\\futurerestore.exe", Application.UserAppDataPath + "\\futurerestore.exe");
+                        File.Move(Application.UserAppDataPath + "\\tmp\\irecovery.exe", Application.UserAppDataPath + "\\irecovery.exe");
                     }
                     catch (Exception ex)
                     {
@@ -129,7 +131,7 @@ namespace iRestore
 
         private void LabelSupport_Click(object sender, EventArgs e)
         {
-            Process.Start("https://paypal.me/qwertyuiop1379");
+            Process.Start("https://paypal.me/sharklatan");
         }
 
         private void CheckSEP_CheckedChanged(object sender, EventArgs e)
@@ -215,7 +217,7 @@ namespace iRestore
 
                 AllocConsole();
 
-                Console.WriteLine("[iRestore] Execute command: futurerestore " + process.StartInfo.Arguments);
+                Console.WriteLine("[Gui] Execute command: futurerestore " + process.StartInfo.Arguments);
                 
                 process.Start();
                 process.BeginOutputReadLine();
@@ -255,7 +257,7 @@ namespace iRestore
                 "Baseband Manifest: Required if you are using a custom baseband.\n\n" +
                 "Would you like more help?", "Info", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-                Process.Start("https://www.reddit.com/r/jailbreak/comments/alw5dd/tutorial_update_futurerestore_101_and_irestore/");
+                Process.Start("https://www.youtube.com/channel/UCiDWDoFNuAMrHGF0yE_Zq2Q?sub_confirmation=1");
             }
         }
 
@@ -265,8 +267,8 @@ namespace iRestore
             {
                 StartInfo = new ProcessStartInfo
                 {
-                    FileName = Application.UserAppDataPath + "\\futurerestore.exe",
-                    Arguments = "--exit-recovery",
+                    FileName = Application.UserAppDataPath + "\\irecovery.exe",
+                    Arguments = "-n",
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
                     RedirectStandardError = true
@@ -277,11 +279,16 @@ namespace iRestore
 
             AllocConsole();
 
-            Console.WriteLine("[iRestore] Execute command: futurerestore " + process.StartInfo.Arguments);
+            Console.WriteLine("[Gui] Execute command: futurerestore " + process.StartInfo.Arguments);
 
             process.Start();
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void ButtonBManifest_Click(object sender, EventArgs e)
