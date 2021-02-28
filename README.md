@@ -21,4 +21,4 @@ v1.0.0
 
 # This uses s0uthwest's version of futurerestore
 
-It can be found at https://github.com/s0uthwest/futurerestore
+https://github.com/opa334/futurerestore/releases
